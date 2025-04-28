@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Submission Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Submit Your Blog Post</h1>
+    <!-- Navigation could go here if needed -->
+  </header>
+
+  <main>
+    <section>
+      <h2>Blog Submission Form</h2>
+
+      <form aria-label="Blog Submission Form"></form>
+
+        <article>
+
+          <!-- Blog Title -->
+          <div>
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" required>
+          </div>
+
+          <!-- Category -->
+          <div>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+              <option value="">Select a category</option>
+              <option value="technology">Technology</option>
+              <option value="lifestyle">Lifestyle</option>
+              <option value="education">Education</option>
+              <option value="travel">Travel</option>
+            </select>
+          </div>
+
+          <!-- Content -->
+          <div>
+            <label for="content">Content:</label>
+            <textarea id="content" name="content" rows="10" required></textarea>
+          </div>
+
+          <!-- Author Name -->
+          <div>
+            <label for="author">Author Name:</label>
+            <input type="text" id="author" name="author" required>
+          </div>
+
+          <!-- Publication Status -->
+          <fieldset>
+            <legend>Publication Status:</legend>
+            <div>
+              <input type="radio" id="draft" name="status" value="draft" required>
+              <label for="draft">Draft</label>
+            </div>
+            <div>
+              <input type="radio" id="published" name="status" value="published" required>
+              <label for="published">Published</label>
+            </div>
+          </fieldset>
+
+          <!-- Terms Agreement -->
+          <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+          </div>
+
+        </article>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Blog Post</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog Platform. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
